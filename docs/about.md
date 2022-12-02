@@ -1,7 +1,7 @@
 # Aequora vulgus esse tales suis lumina adspicit
 
 ## Modular authoring
-{% include omtconc.md param='value' param2='value' %}
+
 
 A simple table looks like this:
 
