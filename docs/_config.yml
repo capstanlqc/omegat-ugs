@@ -1,0 +1,17 @@
+# github build settings
+name: OmegaT UGs
+title: null
+markdown: Markua
+markdown_extensions:
+    - toc:
+        baselevel: 2
+        permalink: True
+        separator: "_"
+extra_css:
+  - stylesheets/extra.css
+extra_javascript:
+  - javascripts/extra.js
+plugins:
+  - search
+  - macros:
+      include_dir: docs/_includes

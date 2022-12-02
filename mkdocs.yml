@@ -1,0 +1,29 @@
+site_name: OmegaT user guides [cApStAn]
+site_url: https://capstanlqc.github.io/omegat-ugs/
+nav:
+    - Home: index.md
+    - Misc:
+        - About: about.md
+        - README: README.md
+        - Cheatsheet: cheatsheet.md
+    - User Guides: 
+        - Handling bidirectionality in OmegaT: tec-omt-rtl.md
+    - Technical:
+        - Security information: tec-cb-ome-sec.md
+theme:
+  name: readthedocs
+  features:
+    - toc.integrate
+markdown_extensions:
+    - toc:
+        baselevel: 2
+        permalink: True
+        separator: "_"
+extra_css:
+  - stylesheets/extra.css
+extra_javascript:
+  - javascripts/extra.js
+plugins:
+  - search
+  - macros:
+      include_dir: docs/_includes
