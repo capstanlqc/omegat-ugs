@@ -2,3 +2,4 @@ mkdocs
 mkdocs-macros-plugin
 mkdocs-material
 mkdocs-toc-sidebar-plugin
+pip-tools
