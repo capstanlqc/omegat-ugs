@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://capstanlqc.github.io/omegat-ugs/tec-cb-ome-sec/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Security information - OmegaT user guides [cApStAn]</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../stylesheets/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Security information";
+        var mkdocs_page_input_path = "tec-cb-ome-sec.md";
+        var mkdocs_page_url = "/omegat-ugs/tec-cb-ome-sec/";
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> OmegaT user guides [cApStAn]
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Misc</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../about/">About</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../README.md">README</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cheatsheet/">Cheatsheet</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Guides</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../tec-omt-rtl/">Handling bidirectionality in OmegaT</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Technical</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Security information</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#updating_windows_malware_definitions">Updating Windows malware definitions</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#integrity_verification_update_needed">Integrity verification &lt;= UPDATE NEEDED</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#java_maintenance">Java maintenance</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#data_leakage">Data leakage</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#open_source">Open source</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#endorsement_by_big_organizations">Endorsement by big organizations</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">OmegaT user guides [cApStAn]</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Technical &raquo;</li>
+      <li>Security information</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="security_information_about_omegat">Security information about OmegaT<a class="headerlink" href="#security_information_about_omegat" title="Permanent link">&para;</a></h2>
+<p>OmegaT is the translation tool selected for the language tasks of various projects. cApStAn is responsible for customizing this tool so that it can interact optimally with the XLIFF files that will be prepared for those projects, and to streamline language tasks and reduce support requests. </p>
+<p>OmegaT will be installed from a designated installer that will be downloaded from the <a href="http://omegat.org">http://omegat.org</a> website. The customization consists of editing or adding some settings files to the default installation and an executable developed by cApStAn will be provided to users to save them the effort of doing the customization manually. If you prefer to customize manually, that's also possible, just let us know.</p>
+<p>The purpose of the present document is to provide information relevant for IT departments who must ensure that any software installed in their organization does not pose any security threads. </p>
+<h3 id="updating_windows_malware_definitions">Updating Windows malware definitions<a class="headerlink" href="#updating_windows_malware_definitions" title="Permanent link">&para;</a></h3>
+<p>Before downloading the installation files (OmegaT installer and customization utility), you should update Windows Defender's definitions. On the command prompt as administrator: </p>
+<ol>
+<li>Change directory to <code>C:\Program Files\Windows Defender</code></li>
+<li>Run <code>MpCmdRun.exe -removedefinitions -dynamicsignatures</code></li>
+<li>Run <code>MpCmdRun.exe -SignatureUpdate</code></li>
+</ol>
+<p>Source: <a href="https://www.microsoft.com/en-us/wdsi/definitions">https://www.microsoft.com/en-us/wdsi/definitions</a></p>
+<h3 id="integrity_verification_update_needed">Integrity verification &lt;= UPDATE NEEDED<a class="headerlink" href="#integrity_verification_update_needed" title="Permanent link">&para;</a></h3>
+<p>You can check the integrity of the file to make sure that, after download, you have the same file that is available for download in the repository of OmegaT binaries. </p>
+<p>On Windows, you can compute the cryptographic hash values of a binary file with the <strong>File Checksum Integrity Verifier</strong> utility (check <a href="https://support.microsoft.com/en-us/help/889768/how-to-compute-the-md5-or-sha-1-cryptographic-hash-values-for-a-file">this</a> for further information and download the utility).</p>
+<p>The correct hashes of the 64-bit installer (OmegaT_4.1.5_04_Beta_Windows_64.exe) are: </p>
+<ul>
+<li>SHA1: <code>9a7560368ca11255c4359c2ed225eb0bd7a7fbe0</code></li>
+<li>MD5:  <code>8c4dd481b715396979ba6ec5e2d1e9a8</code></li>
+</ul>
+<p>The correct hashes of the 32-bit installer (OmegaT_4.1.5_04_Beta_Windows.exe) are: </p>
+<ul>
+<li>SHA1: <code>682e38f718ef8736ccb978f45dd13da75184648a</code></li>
+<li>MD5:  <code>608417d270bc67f153d92e243abd1f96</code></li>
+</ul>
+<p>These values are taken from the <a href="https://sourceforge.net/projects/omegat/files/OmegaT%20-%20Latest/OmegaT%204.1.5%20update%204/">official OmegaT download page</a>.</p>
+<p>If you obtain the same values, you can be certain that you have the same file as it’s available for download and that it’s safe to whitelist it. </p>
+<h3 id="java_maintenance">Java maintenance<a class="headerlink" href="#java_maintenance" title="Permanent link">&para;</a></h3>
+<p>OmegaT is developed in Java and needs JRE to run. The OmegaT installers we recommend include the version of JRE that OmegaT needs, and that JRE would be uninstalled when OmegaT is uninstalled. However, in any case, as Java can be a security risk if it’s not kept up to date, it’s worth maintaining that version of JRE up to date after installed if necessary.</p>
+<h3 id="data_leakage">Data leakage<a class="headerlink" href="#data_leakage" title="Permanent link">&para;</a></h3>
+<p>OmegaT can check for new versions, get MT results, get glossary matches from TaaS, download MediaWiki links and use them as source files, have remote files on HTTP, Git and SVN servers mapped locally, and then there's SVN/Git team project functionality. We're not using any of those functions in the translation of the PISA/PIAAC materials, which means we won't instruct users to configure or use them. </p>
+<p>However, it’s always possible that the user unilaterally uses them. If this is a concern for the organization, OmegaT could be made to work in a complete offline manner, namely it could be started with a non-functional proxy, so it won't connect to internet at all (specifying a non-existing proxy server, e.g. 270.270, in the startup parameters in the <code>OmegaT.l4J.ini</code> file). In other words, it’s up to the organization and their internal policy to decide how much access to the internet it must be allowed to OmegaT. </p>
+<h3 id="open_source">Open source<a class="headerlink" href="#open_source" title="Permanent link">&para;</a></h3>
+<p>In case of any concerns about vulnerabilities in OmegaT against viruses or other malware, the source code is freely available and used to build software packages in several OS distributions. Any Java engineer can inspect the code and conduct any tests to assess its robustness and reliability.</p>
+<h3 id="endorsement_by_big_organizations">Endorsement by big organizations<a class="headerlink" href="#endorsement_by_big_organizations" title="Permanent link">&para;</a></h3>
+<p>The European Commission has been promoting the use of open-source software namely within its [R&amp;D programmes]. It is in this context that open source applications like OmegaT are being used in DGT (the European Commission’s Directorate-General for Translation), alongside other commercial applications. DGT has been using OmegaT for prototyping since 2012, customizing it and extending it with some useful improvements. This information can be useful to endorse the usage of OmegaT. Source: <a href="http://ec.europa.eu/translation/portuguese/magazine/documents/folha54_ot_en.pdf">http://ec.europa.eu/translation/portuguese/magazine/documents/folha54_ot_en.pdf</a></p>
+<p>OmegaT is also one of the Translator Partners of Microsoft. Please see <a href="https://www.microsoft.com/en-us/translator/business/partners/">https://www.microsoft.com/en-us/translator/business/partners/</a>
+DGT and Microsoft can attest the security of OmegaT.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../tec-omt-rtl/" class="btn btn-neutral float-left" title="Handling bidirectionality in OmegaT"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../tec-omt-rtl/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../javascripts/extra.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
